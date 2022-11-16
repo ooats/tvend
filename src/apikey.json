@@ -1,0 +1,42 @@
+[
+  {
+    "id": "apikey-01",
+    "account": "2200",
+    "apiKey": "apikey-01",
+    "createdBy": "PrepaidPlus Administrator",
+    "dateCreated": "2022-01-23",
+    "group": "Hunter",
+    "isActive": true,
+    "merchant": "Hunter",
+    "creditLimit": 0,
+    "outlets": [
+      {
+        "outletId": "2200-01",
+        "outletName": "Hunter",
+        "isActive": true
+      }
+    ],
+    "transactionLimit": 10000,
+    "transactionMinimum": 1
+  },
+  {
+    "id": 2,
+    "account": "1111",
+    "api_key": "apikey-02",
+    "createdBy": "PrepaidPlus Administrator",
+    "dateCreated": "2022-01-23",
+    "group": "Verdure",
+    "isActive": true,
+    "outlets": [
+      {
+        "outletId": "2879-01",
+        "outletName": "Verdure",
+        "isActive": true
+      }
+    ],
+    "products": [{ "electricity": true, "dstv": true, "mascom": true }],
+    "merchant": "Verdure",
+    "transactionLimit": 5000,
+    "transactionMinimum": 1
+  }
+]
