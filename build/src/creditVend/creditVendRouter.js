@@ -17,14 +17,10 @@ const CreditVendService = require("./CreditVendService");
 const router = express_1.default.Router();
 router.post("/", (req, res) => __awaiter(void 0, void 0, void 0, function* () {
     try {
-        console.log("req.body", req.body);
-        let { apiKey } = req.body;
-        console.log("apiKey", apiKey);
-        const key = CreditVendService.findById(apiKey).then((response) => {
-            console.log("found response", response);
-        });
-        console.log("key...", key);
-        return res.send({ message: "key" });
+        const dto = req.body;
+        const key = yield CreditVendService.findById(dto.apiKey);
+        console.log("was key found", key);
+        return res.send({ message: key });
     }
     catch (err) {
         return res.send(err);

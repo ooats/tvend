@@ -1,0 +1,3 @@
+interface creditVendDTO {
+  apiKey: string;
+}

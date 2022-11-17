@@ -5,16 +5,12 @@ const router = express.Router();
 
 router.post("/", async (req, res) => {
   try {
-    console.log("req.body", req.body);
+    const dto: creditVendDTO = req.body as creditVendDTO;
 
-    let { apiKey } = req.body;
-    console.log("apiKey", apiKey);
-    const key = CreditVendService.findById(apiKey).then((response) => {
-      console.log("found response", response);
-    });
+    const key = await CreditVendService.validateAPIKey(dto.apiKey);
 
-    console.log("key...", key);
-    return res.send({ message: "key" });
+    console.log("was key found", key);
+    return res.send({ message: key });
   } catch (err) {
     return res.send(err);
   }

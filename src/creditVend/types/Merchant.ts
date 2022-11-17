@@ -1,4 +1,4 @@
-export type Merchant = {
+interface Merchant {
   account: number;
   apiKey: string;
   group: string;
@@ -7,4 +7,4 @@ export type Merchant = {
   outlets: Outlet[];
   transactionLimit: number;
   transactionMinimum: number;
-};
+}

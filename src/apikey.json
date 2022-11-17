@@ -1,7 +1,6 @@
 [
   {
-    "id": "apikey-01",
-    "account": "2200",
+    "account": 1001,
     "apiKey": "apikey-01",
     "createdBy": "PrepaidPlus Administrator",
     "dateCreated": "2022-01-23",
@@ -20,9 +19,8 @@
     "transactionMinimum": 1
   },
   {
-    "id": 2,
-    "account": "1111",
-    "api_key": "apikey-02",
+    "account": 1111,
+    "apiKey": "apikey-02",
     "createdBy": "PrepaidPlus Administrator",
     "dateCreated": "2022-01-23",
     "group": "Verdure",
