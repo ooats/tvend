@@ -8,6 +8,7 @@
     "isActive": true,
     "merchant": "Hunter",
     "creditLimit": 0,
+
     "outlets": [
       {
         "outletId": "2200-01",
@@ -16,7 +17,7 @@
       }
     ],
     "transactionLimit": 10000,
-    "transactionMinimum": 1
+"transactionMinimum": 1
   },
   {
     "account": 1111,
